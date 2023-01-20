@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    container_name: myDB
+    image: postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=mysecretpassword
+    ports:
+      - 5555:5432
+    restart: always
